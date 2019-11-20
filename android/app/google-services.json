@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "771750695586",
+    "firebase_url": "https://golden-torch-247507.firebaseio.com",
+    "project_id": "golden-torch-247507",
+    "storage_bucket": "golden-torch-247507.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771750695586:android:c7b4b804b647f53883fdfb",
+        "android_client_info": {
+          "package_name": "com.medapp.khadija"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771750695586-13vj07rdg0a2cgn6mnmjprumb5dr97bu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medapp.khadija",
+            "certificate_hash": "17e1c22c34677dd5520f808697549530de486808"
+          }
+        },
+        {
+          "client_id": "771750695586-nol34dbsjvi40rp3q3gev0hfteiecq18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8P6OB3dW0pQdkpLmeGmy31OpNwN77vbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771750695586-nol34dbsjvi40rp3q3gev0hfteiecq18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771750695586:android:d972c7d662b64c0b83fdfb",
+        "android_client_info": {
+          "package_name": "com.mzshows.tv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771750695586-0b3993kv32am0gaif7g3h82r1hu8qbfr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mzshows.tv",
+            "certificate_hash": "17e1c22c34677dd5520f808697549530de486808"
+          }
+        },
+        {
+          "client_id": "771750695586-nol34dbsjvi40rp3q3gev0hfteiecq18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8P6OB3dW0pQdkpLmeGmy31OpNwN77vbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771750695586-nol34dbsjvi40rp3q3gev0hfteiecq18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771750695586:android:34cead101445197583fdfb",
+        "android_client_info": {
+          "package_name": "com.payapp.nestwallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771750695586-j3eiv0jqh5gihp81i869kq3v2u6jeitq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.payapp.nestwallet",
+            "certificate_hash": "17e1c22c34677dd5520f808697549530de486808"
+          }
+        },
+        {
+          "client_id": "771750695586-nol34dbsjvi40rp3q3gev0hfteiecq18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8P6OB3dW0pQdkpLmeGmy31OpNwN77vbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771750695586-nol34dbsjvi40rp3q3gev0hfteiecq18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
