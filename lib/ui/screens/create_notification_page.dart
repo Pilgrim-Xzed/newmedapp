@@ -34,19 +34,23 @@ class _CreateNotificationPageState extends State<CreateNotificationPage> {
                 key: _formKey,
                 child: Column(
                   children: <Widget>[
-                    CustomTextField(
+                    TextField(
                       controller: _titleController,
-                      hint: 'Title',
+                     decoration: InputDecoration(
+                       hintText: 'Title'
+                     ),
                     ),
                     SizedBox(height: 12.0,),
-                    CustomTextField(
+                    TextField(
                       controller: _descriptionController,
-                      hint: 'Description',
+                      decoration: InputDecoration(
+                       hintText: 'Description'
+                     ),
                     ),
                     SizedBox(height: 12.0,),
-                    CustomFlatButton(
+                    FlatButton(
                       onPressed: createNotification,
-                      title: 'Add Reminder',
+                      child:Text('Add Reminder'),
                     )
                   ], 
                 ),

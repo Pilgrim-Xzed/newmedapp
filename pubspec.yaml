@@ -34,6 +34,10 @@ dependencies:
   grouped_buttons: ^1.0.4
   flutter_screenutil: ^0.6.0
   flutter_local_notifications: ^0.8.4
+  scheduled_notifications: ^1.0.0
+  path_provider: ^1.4.4
+
+
 
 dev_dependencies:
   flutter_test:

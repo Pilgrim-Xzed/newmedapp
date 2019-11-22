@@ -1,9 +1,17 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:newapp/business/firebasenotification.dart';
+import 'package:newapp/ui/screens/local_notification.dart';
 import 'package:newapp/ui/screens/main_screen.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
+
+  
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_time_picker_spinner/flutter_time_picker_spinner.dart';
-  
+import 'package:scheduled_notifications/scheduled_notifications.dart';
+
   
 enum days { MON, TUE, WED, THURS, FRI, SAT, SUN }
 
@@ -23,10 +31,36 @@ class _AddMedState extends State<AddMed> {
   bool _isChecked = false;
   bool _monval = false;
   final db = Firestore.instance;
+  final notifications = FlutterLocalNotificationsPlugin();
+
+  @override
+  void initState() {
+    super.initState();
+    final settingsAndroid = AndroidInitializationSettings('medical');
+    final settingsIOS = IOSInitializationSettings(
+      onDidReceiveLocalNotification: ((id,title,body,payload)=>onSelectNotification(payload))
+
+  
+    );
+
+        notifications.initialize(
+        InitializationSettings(settingsAndroid,settingsIOS),
+        onSelectNotification:onSelectNotification);
+      
+  }
+
+
+  _scheduleNotification() async {
+    int notificationId = await ScheduledNotifications.scheduleNotification(
+        new DateTime.now().add(new Duration(seconds: 5)).millisecondsSinceEpoch,
+        "Ticker text",
+        "Content title",
+        "Content");
+  }
 
 
 
-
+Future onSelectNotification(String payload) async => await Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondPage()));
   
 
   void _dialogResult(String val) {
@@ -79,8 +113,9 @@ class _AddMedState extends State<AddMed> {
         time = picked;
       });
     }
-    ;
+    
   }
+
 
   List<Widget> makeradios(List<String> elemlist) {
     List<Widget> list = new List<Widget>();
@@ -431,9 +466,7 @@ var _dateTime;
                         fontSize: 15.0,
                       ),
                     ),
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                    },
+                    onPressed: ()=>null
                   ),
                   SizedBox(
                     width: 10.0,
@@ -455,7 +488,9 @@ var _dateTime;
                         "infoid":widget.firebaseUser.uid
                         
                       };
-                      await db.collection('info').add(data);
+                      await db.collection('info').add(data).then((onValue)=>{
+                         showOngoingNotification(notifications,title:medName.text,body:dosageName.text,time:time),
+                      });
                       Navigator.of(context).pop();
                     },
                   ),
@@ -466,6 +501,15 @@ var _dateTime;
         ),
       ),
       resizeToAvoidBottomInset: false,
+    );
+  }
+}
+
+class SecondPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      
     );
   }
 }

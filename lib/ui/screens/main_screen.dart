@@ -3,13 +3,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 import 'package:newapp/business/auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:newapp/models/user.dart';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:newapp/ui/screens/addmed.dart';
+import 'package:newapp/ui/screens/create_notification_page.dart';
 import 'package:newapp/ui/screens/reminder.dart';
 import 'package:newapp/ui/screens/root_screen.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
+
  
 FirebaseUser firebaseUserMain ;
 class MainScreen extends StatefulWidget {
@@ -98,9 +100,23 @@ class _MainScreenState extends State<MainScreen> {
                   style: new TextStyle(),
                 )),
             ListTile(
+              title: Text('Create Notification'),
+              onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) =>CreateNotificationPage()),
+                  );
+                _scaffoldKey.currentState.openEndDrawer();
+              },
+            ),
+
+               ListTile(
               title: Text('Measurement Reminder'),
               onTap: (){
-                Reminder();
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) =>Reminder()),
+                  );
                 _scaffoldKey.currentState.openEndDrawer();
               },
             ),

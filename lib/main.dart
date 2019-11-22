@@ -1,3 +1,5 @@
+import 'dart:isolate';
+
 import 'package:flutter/material.dart';
 import "package:newapp/ui/screens/walk_screen.dart";
 import 'package:newapp/ui/screens/root_screen.dart';
@@ -7,11 +9,15 @@ import 'package:newapp/ui/screens/main_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-void main() {
+
+
+void main(){
   Firestore.instance.settings(timestampsInSnapshotsEnabled: true);
+
   SharedPreferences.getInstance().then((prefs) {
     runApp(MyApp(prefs: prefs));
   });
+ 
 }
 
 class MyApp extends StatelessWidget {

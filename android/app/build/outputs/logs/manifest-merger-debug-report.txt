@@ -1,0 +1,477 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:1:1-55:12
+INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:1:1-55:12
+INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:1:1-55:12
+INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:1:1-55:12
+MERGED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:1:1-55:12
+MERGED from [androidx.multidex:multidex:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/multidex-2.0.0.aar/2de6e6faab97b1dcf76b7ba01ae0d08e/AndroidManifest.xml:17:1-22:12
+MERGED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-20:12
+MERGED from [:firebase_auth] /home/pilgrim001/Desktop/newapp/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-15:12
+MERGED from [:shared_preferences] /home/pilgrim001/Desktop/newapp/build/shared_preferences/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [:android_alarm_manager] /home/pilgrim001/Desktop/newapp/build/android_alarm_manager/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [:scheduled_notifications] /home/pilgrim001/Desktop/newapp/build/scheduled_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-23:12
+MERGED from [:flutter_local_notifications] /home/pilgrim001/Desktop/newapp/build/flutter_local_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [:cloud_firestore] /home/pilgrim001/Desktop/newapp/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] /home/pilgrim001/Desktop/newapp/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-20.0.0.aar/ef6a477bf7bc72ae12fcd6235f439717/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-17.0.0.aar/34ad4d29bfc294620080f055ed262cb6/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-common-19.0.0.aar/d223e0862dc9651ed81641f23e74928a/AndroidManifest.xml:2:1-19:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/01e3279d9f7cba84e60ff4a7a3cdddb0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/a6404c6b7e86fbfb0c55b4c712dfe4dc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-17.0.0.aar/1ed1a5250261d51d0b80a3e68227b296/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/fc250cf63c1bb8bf9ce3df78e073be66/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-tasks-17.0.0.aar/3246975d3d8109a4e0424a85749613b9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-18.0.0.aar/c3e52cd1e94f0c1e779dd7ebbd3bcebc/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-stats-17.0.0.aar/f65b4689b8f41d67a2ff66ebd44e6375/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/3f3f6a887a6cd06bed226e9f09f4dfec/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/4700931d375e5c915d4b4ec276a33e1a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/5393ccc63b9f3e629c90a3c00d9669ed/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/0c6fb0d398368e4335720a75a6ca54b7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/e3ec8b4c9cdc4383170d1c0af7e9e63a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/af84cdb444689d86a7fa97987c6a52ce/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/7703d808a44ab1d6ddb73149754f5400/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/7612f4ca10656d2d08d12b1a344756e6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/d58f2370049723d13165ce33a5921df1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/1e4c38a369ea039821f7761bb9c63159/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/cbd71aae12b283bce328f194b2805195/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/0ffe164d910889ab1f4b75f4d9fe3906/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/99a2f35849e17a3e5ee408bc709acb9b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/a1cd0a328c475b45eb27b4a6ac30bd4f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/0cd6b6b5ff6ee56b9167cd9afe4daf46/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/9f526eeed7b74d329e58de93e6a8c3d1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/545c3838942863e8c1b67b612fdd4779/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/f48edfb0cabdf0cac92fb477f0644032/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/72fa8cb1049644dca0dba240c33949c0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/f47d9ab9fbb36543204c8fa8e94d16f4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/b7add88775a264dcbf5ddf8496275a9f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/0b9457bd3def6ce67b1b670d14623f72/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/81c8d8fe826f3b3060dd82639dd67f4f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/8347b698c0b1fbd2cad3f58bd95667a7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/d28f87ca187d086f0f766ebceac9e4bf/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/2473c26d84227398915b25db92651c38/AndroidManifest.xml:17:1-22:12
+MERGED from [io.grpc:grpc-android:1.16.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/108393fddae90dad459b476910b884bd/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/9c91ba1752fea069e9cac3b892b1662f/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/e71f1e39204d8afb8b7fa4b019a0f80d/AndroidManifest.xml:2:1-11:12
+INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:2:5-33
+		INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:1:1-55:12
+		INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/debug/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:1:1-55:12
+		INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:9:10-71
+MERGED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:9:10-71
+MERGED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:9:10-71
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:9:27-69
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:10:10-85
+MERGED from [:scheduled_notifications] /home/pilgrim001/Desktop/newapp/build/scheduled_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-81
+MERGED from [:scheduled_notifications] /home/pilgrim001/Desktop/newapp/build/scheduled_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:10:27-83
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:11:10-72
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:11:27-70
+uses-permission#android.permission.SET_ALARM
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:12:10-72
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:12:27-70
+application
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:13:5-54:19
+MERGED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-18:19
+MERGED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-18:19
+MERGED from [:firebase_auth] /home/pilgrim001/Desktop/newapp/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /home/pilgrim001/Desktop/newapp/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-13:19
+MERGED from [:scheduled_notifications] /home/pilgrim001/Desktop/newapp/build/scheduled_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:13:5-21:19
+MERGED from [:scheduled_notifications] /home/pilgrim001/Desktop/newapp/build/scheduled_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:13:5-21:19
+MERGED from [:cloud_firestore] /home/pilgrim001/Desktop/newapp/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /home/pilgrim001/Desktop/newapp/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /home/pilgrim001/Desktop/newapp/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /home/pilgrim001/Desktop/newapp/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-20.0.0.aar/ef6a477bf7bc72ae12fcd6235f439717/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-20.0.0.aar/ef6a477bf7bc72ae12fcd6235f439717/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:16:5-22:19
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:16:5-22:19
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-17.0.0.aar/34ad4d29bfc294620080f055ed262cb6/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-17.0.0.aar/34ad4d29bfc294620080f055ed262cb6/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-common-19.0.0.aar/d223e0862dc9651ed81641f23e74928a/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-common-19.0.0.aar/d223e0862dc9651ed81641f23e74928a/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-17.0.0.aar/1ed1a5250261d51d0b80a3e68227b296/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-17.0.0.aar/1ed1a5250261d51d0b80a3e68227b296/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/fc250cf63c1bb8bf9ce3df78e073be66/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/fc250cf63c1bb8bf9ce3df78e073be66/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-tasks-17.0.0.aar/3246975d3d8109a4e0424a85749613b9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-tasks-17.0.0.aar/3246975d3d8109a4e0424a85749613b9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-18.0.0.aar/c3e52cd1e94f0c1e779dd7ebbd3bcebc/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-18.0.0.aar/c3e52cd1e94f0c1e779dd7ebbd3bcebc/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-stats-17.0.0.aar/f65b4689b8f41d67a2ff66ebd44e6375/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-stats-17.0.0.aar/f65b4689b8f41d67a2ff66ebd44e6375/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/3f3f6a887a6cd06bed226e9f09f4dfec/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/3f3f6a887a6cd06bed226e9f09f4dfec/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/9f526eeed7b74d329e58de93e6a8c3d1/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/9f526eeed7b74d329e58de93e6a8c3d1/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/545c3838942863e8c1b67b612fdd4779/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/545c3838942863e8c1b67b612fdd4779/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/9f526eeed7b74d329e58de93e6a8c3d1/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:15:9-31
+	android:icon
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:16:9-45
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:14:9-57
+activity#com.example.newapp.MainActivity
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:17:9-39:20
+	android:launchMode
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:19:13-43
+	android:hardwareAccelerated
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:22:13-47
+	android:windowSoftInputMode
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:23:13-55
+	android:configChanges
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:21:13-144
+	android:theme
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:20:13-47
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:18:13-41
+meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:28:13-30:40
+	android:value
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:30:17-37
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:29:17-82
+intent-filter#action:name:FLUTTER_NOTIFICATION_CLICK+action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:31:13-36:29
+action#android.intent.action.MAIN
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:32:17-68
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:32:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:33:17-76
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:33:27-74
+action#FLUTTER_NOTIFICATION_CLICK
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:34:25-66
+category#android.intent.category.DEFAULT
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:35:17-76
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:35:27-73
+service#io.flutter.plugins.androidalarmmanager.AlarmService
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:40:12-43:44
+	android:exported
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:43:17-41
+	android:permission
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:42:17-73
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:41:17-83
+receiver#io.flutter.plugins.androidalarmmanager.AlarmBroadcastReceiver
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:44:13-46:44
+	android:exported
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:46:17-41
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:45:17-93
+receiver#io.flutter.plugins.androidalarmmanager.RebootBroadcastReceiver
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:47:13-53:24
+	android:exported
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:49:17-41
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:48:17-94
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:50:17-52:33
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:51:21-90
+	android:name
+		ADDED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml:51:29-80
+uses-sdk
+INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml
+MERGED from [androidx.multidex:multidex:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/multidex-2.0.0.aar/2de6e6faab97b1dcf76b7ba01ae0d08e/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/multidex-2.0.0.aar/2de6e6faab97b1dcf76b7ba01ae0d08e/AndroidManifest.xml:20:5-43
+MERGED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /home/pilgrim001/Desktop/newapp/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /home/pilgrim001/Desktop/newapp/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /home/pilgrim001/Desktop/newapp/build/shared_preferences/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /home/pilgrim001/Desktop/newapp/build/shared_preferences/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:android_alarm_manager] /home/pilgrim001/Desktop/newapp/build/android_alarm_manager/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:android_alarm_manager] /home/pilgrim001/Desktop/newapp/build/android_alarm_manager/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:scheduled_notifications] /home/pilgrim001/Desktop/newapp/build/scheduled_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:scheduled_notifications] /home/pilgrim001/Desktop/newapp/build/scheduled_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:flutter_local_notifications] /home/pilgrim001/Desktop/newapp/build/flutter_local_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] /home/pilgrim001/Desktop/newapp/build/flutter_local_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /home/pilgrim001/Desktop/newapp/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /home/pilgrim001/Desktop/newapp/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /home/pilgrim001/Desktop/newapp/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /home/pilgrim001/Desktop/newapp/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-20.0.0.aar/ef6a477bf7bc72ae12fcd6235f439717/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-20.0.0.aar/ef6a477bf7bc72ae12fcd6235f439717/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-17.0.0.aar/34ad4d29bfc294620080f055ed262cb6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-17.0.0.aar/34ad4d29bfc294620080f055ed262cb6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-common-19.0.0.aar/d223e0862dc9651ed81641f23e74928a/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-common-19.0.0.aar/d223e0862dc9651ed81641f23e74928a/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.appcompat:appcompat:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/01e3279d9f7cba84e60ff4a7a3cdddb0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/01e3279d9f7cba84e60ff4a7a3cdddb0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/a6404c6b7e86fbfb0c55b4c712dfe4dc/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/a6404c6b7e86fbfb0c55b4c712dfe4dc/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-17.0.0.aar/1ed1a5250261d51d0b80a3e68227b296/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-17.0.0.aar/1ed1a5250261d51d0b80a3e68227b296/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/fc250cf63c1bb8bf9ce3df78e073be66/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/fc250cf63c1bb8bf9ce3df78e073be66/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-tasks-17.0.0.aar/3246975d3d8109a4e0424a85749613b9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-tasks-17.0.0.aar/3246975d3d8109a4e0424a85749613b9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-18.0.0.aar/c3e52cd1e94f0c1e779dd7ebbd3bcebc/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-18.0.0.aar/c3e52cd1e94f0c1e779dd7ebbd3bcebc/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-stats-17.0.0.aar/f65b4689b8f41d67a2ff66ebd44e6375/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-stats-17.0.0.aar/f65b4689b8f41d67a2ff66ebd44e6375/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/3f3f6a887a6cd06bed226e9f09f4dfec/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/3f3f6a887a6cd06bed226e9f09f4dfec/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/4700931d375e5c915d4b4ec276a33e1a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/4700931d375e5c915d4b4ec276a33e1a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/5393ccc63b9f3e629c90a3c00d9669ed/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/5393ccc63b9f3e629c90a3c00d9669ed/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/0c6fb0d398368e4335720a75a6ca54b7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/0c6fb0d398368e4335720a75a6ca54b7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/e3ec8b4c9cdc4383170d1c0af7e9e63a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/e3ec8b4c9cdc4383170d1c0af7e9e63a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/af84cdb444689d86a7fa97987c6a52ce/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/af84cdb444689d86a7fa97987c6a52ce/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/7703d808a44ab1d6ddb73149754f5400/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/7703d808a44ab1d6ddb73149754f5400/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/7612f4ca10656d2d08d12b1a344756e6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/7612f4ca10656d2d08d12b1a344756e6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/d58f2370049723d13165ce33a5921df1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/d58f2370049723d13165ce33a5921df1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/1e4c38a369ea039821f7761bb9c63159/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/1e4c38a369ea039821f7761bb9c63159/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/cbd71aae12b283bce328f194b2805195/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/cbd71aae12b283bce328f194b2805195/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/0ffe164d910889ab1f4b75f4d9fe3906/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/0ffe164d910889ab1f4b75f4d9fe3906/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/99a2f35849e17a3e5ee408bc709acb9b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/99a2f35849e17a3e5ee408bc709acb9b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/a1cd0a328c475b45eb27b4a6ac30bd4f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/a1cd0a328c475b45eb27b4a6ac30bd4f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/0cd6b6b5ff6ee56b9167cd9afe4daf46/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/0cd6b6b5ff6ee56b9167cd9afe4daf46/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/9f526eeed7b74d329e58de93e6a8c3d1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/9f526eeed7b74d329e58de93e6a8c3d1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/545c3838942863e8c1b67b612fdd4779/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/545c3838942863e8c1b67b612fdd4779/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/f48edfb0cabdf0cac92fb477f0644032/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/f48edfb0cabdf0cac92fb477f0644032/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/72fa8cb1049644dca0dba240c33949c0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/72fa8cb1049644dca0dba240c33949c0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/f47d9ab9fbb36543204c8fa8e94d16f4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/f47d9ab9fbb36543204c8fa8e94d16f4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/b7add88775a264dcbf5ddf8496275a9f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/b7add88775a264dcbf5ddf8496275a9f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/0b9457bd3def6ce67b1b670d14623f72/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/0b9457bd3def6ce67b1b670d14623f72/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/81c8d8fe826f3b3060dd82639dd67f4f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/81c8d8fe826f3b3060dd82639dd67f4f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/8347b698c0b1fbd2cad3f58bd95667a7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/8347b698c0b1fbd2cad3f58bd95667a7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/d28f87ca187d086f0f766ebceac9e4bf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/d28f87ca187d086f0f766ebceac9e4bf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/2473c26d84227398915b25db92651c38/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/2473c26d84227398915b25db92651c38/AndroidManifest.xml:20:5-44
+MERGED from [io.grpc:grpc-android:1.16.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/108393fddae90dad459b476910b884bd/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.16.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/108393fddae90dad459b476910b884bd/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/9c91ba1752fea069e9cac3b892b1662f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/9c91ba1752fea069e9cac3b892b1662f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/e71f1e39204d8afb8b7fa4b019a0f80d/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/e71f1e39204d8afb8b7fa4b019a0f80d/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/pilgrim001/Desktop/newapp/android/app/src/debug/AndroidManifest.xml
+service#io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService
+ADDED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:8:9-12:19
+	android:name
+		ADDED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:8:18-101
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:9:13-11:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:10:17-78
+	android:name
+		ADDED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:10:25-75
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:13:9-17:19
+MERGED from [:firebase_auth] /home/pilgrim001/Desktop/newapp/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] /home/pilgrim001/Desktop/newapp/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /home/pilgrim001/Desktop/newapp/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /home/pilgrim001/Desktop/newapp/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /home/pilgrim001/Desktop/newapp/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /home/pilgrim001/Desktop/newapp/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:17:9-21:19
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:17:9-21:19
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:13:18-89
+meta-data#com.google.firebase.components:io.flutter.plugins.firebasemessaging.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:14:13-16:85
+	android:value
+		ADDED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:16:17-82
+	android:name
+		ADDED from [:firebase_messaging] /home/pilgrim001/Desktop/newapp/build/firebase_messaging/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:15:17-127
+meta-data#com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_auth] /home/pilgrim001/Desktop/newapp/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_auth] /home/pilgrim001/Desktop/newapp/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_auth] /home/pilgrim001/Desktop/newapp/build/firebase_auth/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:10:17-122
+receiver#dk.kjeldsen.scheduled_notifications.OnRebootReceiver
+ADDED from [:scheduled_notifications] /home/pilgrim001/Desktop/newapp/build/scheduled_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:14:9-18:20
+	android:name
+		ADDED from [:scheduled_notifications] /home/pilgrim001/Desktop/newapp/build/scheduled_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:14:19-86
+service#dk.kjeldsen.scheduled_notifications.ScheduleNotificationsService
+ADDED from [:scheduled_notifications] /home/pilgrim001/Desktop/newapp/build/scheduled_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:20:9-100
+	android:name
+		ADDED from [:scheduled_notifications] /home/pilgrim001/Desktop/newapp/build/scheduled_notifications/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:20:18-97
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar
+ADDED from [:cloud_firestore] /home/pilgrim001/Desktop/newapp/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:cloud_firestore] /home/pilgrim001/Desktop/newapp/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:cloud_firestore] /home/pilgrim001/Desktop/newapp/build/cloud_firestore/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:10:17-133
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_core] /home/pilgrim001/Desktop/newapp/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_core] /home/pilgrim001/Desktop/newapp/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_core] /home/pilgrim001/Desktop/newapp/build/firebase_core/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:10:17-123
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-20.0.0.aar/ef6a477bf7bc72ae12fcd6235f439717/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-20.0.0.aar/ef6a477bf7bc72ae12fcd6235f439717/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-messaging-20.0.0.aar/ef6a477bf7bc72ae12fcd6235f439717/AndroidManifest.xml:29:13-82
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:24:9-31:50
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:26:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:28:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:27:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:29:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:30:13-72
+	tools:replace
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:31:13-47
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:25:13-85
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/a7d77358f121ab7e39ef6e159189fedb/AndroidManifest.xml:37:17-109
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:22:5-79
+MERGED from [io.grpc:grpc-android:1.16.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/108393fddae90dad459b476910b884bd/AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.16.1] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/108393fddae90dad459b476910b884bd/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:13:22-76
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/d8518b9eea9928d47fc7f74d6c3373a6/AndroidManifest.xml:19:17-111
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-iid-20.0.0.aar/95a25e2ef5a0473c1493ceaa3e1a7829/AndroidManifest.xml:42:25-78
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-common-19.0.0.aar/d223e0862dc9651ed81641f23e74928a/AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-common-19.0.0.aar/d223e0862dc9651ed81641f23e74928a/AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-common-19.0.0.aar/d223e0862dc9651ed81641f23e74928a/AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-common-19.0.0.aar/d223e0862dc9651ed81641f23e74928a/AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/firebase-common-19.0.0.aar/d223e0862dc9651ed81641f23e74928a/AndroidManifest.xml:13:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/fc250cf63c1bb8bf9ce3df78e073be66/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/fc250cf63c1bb8bf9ce3df78e073be66/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/fc250cf63c1bb8bf9ce3df78e073be66/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/fc250cf63c1bb8bf9ce3df78e073be66/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/3f3f6a887a6cd06bed226e9f09f4dfec/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/3f3f6a887a6cd06bed226e9f09f4dfec/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/pilgrim001/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/3f3f6a887a6cd06bed226e9f09f4dfec/AndroidManifest.xml:24:13-58
