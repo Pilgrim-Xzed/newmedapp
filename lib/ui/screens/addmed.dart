@@ -90,7 +90,7 @@ _showReportDialog() {
         builder: (BuildContext context) {
           //Here we will build the content of the dialog
           return AlertDialog(
-            title: Text("Report Video"),
+            title: Text("Days"),
             content: MultiSelectChip(
               days,
               onSelectionChanged: (selectedList) {
@@ -101,7 +101,7 @@ _showReportDialog() {
             ),
             actions: <Widget>[
               FlatButton(
-                child: Text("Report"),
+                child: Text("Done"),
                 onPressed: () => Navigator.of(context).pop(),
               )
             ],
