@@ -181,11 +181,22 @@ class Medications extends StatelessWidget {
                       ),
                       // subtitle: Text("Intermediate", style: TextStyle(color: Colors.white)),
 
-                      subtitle: Row(
+                      subtitle: Column(
+                        children: <Widget>[
+                          Row(
                         children: <Widget>[
                           Icon(Icons.linear_scale, color: Colors.green),
-                          Text(document['interval'].toString(),
+                          Text("${document['interval'].toString()} Dosage: ${document['dosage']}",
                               style: TextStyle(color: Colors.black))
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          
+                          Text("${document['selectedDays'].toString()}",
+                              style: TextStyle(color: Colors.black))
+                        ],
+                      ),
                         ],
                       ),
                       trailing: IconButton(
