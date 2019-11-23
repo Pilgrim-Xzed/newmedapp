@@ -71,6 +71,42 @@ Future onSelectNotification(String payload) async => await Navigator.push(contex
       Navigator.of(context).pop();
     }
     
+  }  
+  List<String> days = [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thurs",
+    "Fri"
+  ];
+
+
+  List<String> selectedDays = List();
+
+
+_showReportDialog() {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          //Here we will build the content of the dialog
+          return AlertDialog(
+            title: Text("Report Video"),
+            content: MultiSelectChip(
+              days,
+              onSelectionChanged: (selectedList) {
+                setState(() {
+                  selectedDays = selectedList;
+                });
+              },
+            ),
+            actions: <Widget>[
+              FlatButton(
+                child: Text("Report"),
+                onPressed: () => Navigator.of(context).pop(),
+              )
+            ],
+          );
+        });
   }
 
   void showAlertDialog() {
@@ -118,33 +154,6 @@ Future onSelectNotification(String payload) async => await Navigator.push(contex
   }
 
 
-  List<Widget> makeradios(List<String> elemlist) {
-    List<Widget> list = new List<Widget>();
-
-    list.add(
-      new RadioListTile(
-        onChanged: (String value) {
-          onChangedradio(value);
-        },
-        value: elemlist.elementAt(0),
-        title: new Text(elemlist.elementAt(0)),
-        groupValue: selected,
-      ),
-    );
-    list.add(
-      new RadioListTile(
-        onChanged: (String value) {
-          onChangedradio(value);
-          _askdays();
-        },
-        value: elemlist.elementAt(1),
-        title: new Text(elemlist.elementAt(1)),
-        groupValue: selected,
-      ),
-    );
-
-    return list;
-  }
 
   void onChangedradio(String value) {
     setState(() {
@@ -158,144 +167,7 @@ Future onSelectNotification(String payload) async => await Navigator.push(contex
     });
   }
 
-  Future<void> _askdays() async {
-    //days dialog
-    switch (await showDialog<days>(
-      context: context,
-      child: new SimpleDialog(
-        title: new Text('Select days'),
-        children: <Widget>[
-          new SimpleDialogOption(
-            child: CheckboxListTile(
-              controlAffinity: ListTileControlAffinity.leading,
-              title: const Text('MON'),
-              value: _monval,
-              onChanged: (bool value) {
-                setState(() {
-                  _monval = value;
-                });
-              },
-            ),
-            onPressed: () {
-              Navigator.pop(context, days.MON);
-            },
-          ),
-          new SimpleDialogOption(
-            child: CheckboxListTile(
-              controlAffinity: ListTileControlAffinity.leading,
-              title: const Text('TUE'),
-              value: _isChecked,
-              onChanged: (bool value) {
-                setState(() {
-                  _isChecked = value;
-                });
-              },
-            ),
-            onPressed: () {
-              Navigator.pop(context, days.TUE);
-            },
-          ),
-          new SimpleDialogOption(
-            child: CheckboxListTile(
-              controlAffinity: ListTileControlAffinity.leading,
-              title: const Text('WED'),
-              value: _isChecked,
-              onChanged: (bool value) {
-                setState(() {
-                  _isChecked = value;
-                });
-              },
-            ),
-            onPressed: () {
-              Navigator.pop(context, days.WED);
-            },
-          ),
-          new SimpleDialogOption(
-            child: CheckboxListTile(
-              controlAffinity: ListTileControlAffinity.leading,
-              title: const Text('THURS'),
-              value: _isChecked,
-              onChanged: (bool value) {
-                setState(() {
-                  _isChecked = value;
-                });
-              },
-            ),
-            onPressed: () {
-              Navigator.pop(context, days.THURS);
-            },
-          ),
-          new SimpleDialogOption(
-            child: CheckboxListTile(
-              controlAffinity: ListTileControlAffinity.leading,
-              title: const Text('FRI'),
-              value: _isChecked,
-              onChanged: (bool value) {
-                setState(() {
-                  _isChecked = value;
-                });
-              },
-            ),
-            onPressed: () {
-              Navigator.pop(context, days.FRI);
-            },
-          ),
-          new SimpleDialogOption(
-            child: CheckboxListTile(
-              controlAffinity: ListTileControlAffinity.leading,
-              title: const Text('SAT'),
-              value: _isChecked,
-              onChanged: (bool value) {
-                setState(() {
-                  _isChecked = value;
-                });
-              },
-            ),
-            onPressed: () {
-              Navigator.pop(context, days.SAT);
-            },
-          ),
-          new SimpleDialogOption(
-            child: CheckboxListTile(
-              controlAffinity: ListTileControlAffinity.leading,
-              title: const Text('SUN'),
-              value: _isChecked,
-              onChanged: (bool value) {
-                setState(() {
-                  _isChecked = value;
-                });
-              },
-            ),
-            onPressed: () {
-              Navigator.pop(context, days.SUN);
-            },
-          ),
-        ],
-      ),
-    )) {
-      case days.MON:
-        setAnswer('mon');
-        break;
-      case days.TUE:
-        setAnswer('tue');
-        break;
-      case days.WED:
-        setAnswer('wed');
-        break;
-      case days.THURS:
-        setAnswer('thurs');
-        break;
-      case days.FRI:
-        setAnswer('fri');
-        break;
-      case days.SAT:
-        setAnswer('sat');
-        break;
-      case days.SUN:
-        setAnswer('sun');
-        break;
-    }
-  }
+  
 
   final _medName = TextEditingController();
   final _dosageName = TextEditingController();
@@ -453,16 +325,19 @@ var _dateTime;
                         ],
                       ),
                       Divider(height: 12.0),
-                      new Text(
-                        'Days',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                          fontSize: 15.0,
+                      InkWell(
+                        onTap:(){
+                          _showReportDialog();
+                        },
+                                              child: new Text(
+                          'Days:${selectedDays}',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            fontSize: 15.0,
+                          ),
                         ),
                       ),
-                      Column(
-                        children: makeradios(itemlist),
-                      )
+                    
                       //addradio(['Every day', 'Selected days of the week']),
                     ],
                   ),
@@ -499,6 +374,7 @@ var _dateTime;
                           "dosage": _dosageName.text,
                           "time": _dateTime,
                           "interval":dropdownvalue,
+                          "selectedDays":selectedDays.toString(),
                           "infoid":widget.firebaseUser.uid
                           
                         };
@@ -520,6 +396,7 @@ var _dateTime;
   }
 }
 
+
 class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -528,3 +405,51 @@ class SecondPage extends StatelessWidget {
     );
   }
 }
+
+
+class MultiSelectChip extends StatefulWidget {
+  final List<String> reportList;
+  final Function(List<String>) onSelectionChanged;
+
+  MultiSelectChip(this.reportList, {this.onSelectionChanged});
+
+  @override
+  _MultiSelectChipState createState() => _MultiSelectChipState();
+}
+
+class _MultiSelectChipState extends State<MultiSelectChip> {
+  // String selectedChoice = "";
+  List<String> selectedChoices = List();
+
+  _buildChoiceList() {
+    List<Widget> choices = List();
+
+    widget.reportList.forEach((item) {
+      choices.add(Container(
+        padding: const EdgeInsets.all(2.0),
+        child: ChoiceChip(
+          label: Text(item,style: TextStyle(color: Colors.green),),
+          selected: selectedChoices.contains(item),
+          onSelected: (selected) {
+            setState(() {
+              selectedChoices.contains(item)
+                  ? selectedChoices.remove(item)
+                  : selectedChoices.add(item);
+              widget.onSelectionChanged(selectedChoices);
+            });
+          },
+        ),
+      ));
+    });
+
+    return choices;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      children: _buildChoiceList(),
+    );
+  }
+}
+
