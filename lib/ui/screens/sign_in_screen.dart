@@ -54,15 +54,19 @@ class _SignInScreenState extends State<SignInScreen> {
       child: Scaffold(
         backgroundColor: Color(0xFF21BFBD),
         body: ListView(
+          padding: EdgeInsets.only(top: 15.0),
           children: <Widget>[
-            Padding(
-              padding: EdgeInsets.only(top: 15.0, left: 10.0),
-              child: SafeArea(
-                    child: IconButton(
-                    icon: Icon(Icons.arrow_back),
-                    onPressed: onBackPress,
-                    ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+              SafeArea(
+                child: IconButton(
+                icon: Icon(Icons.arrow_back),
+                color: Colors.white,
+                onPressed: onBackPress,
+                ),
               ),
+              ],
             ),
             SizedBox(height: 25.0,),
             Padding(
@@ -74,7 +78,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         style: TextStyle(
                           color: Colors.white,
                           decoration: TextDecoration.none,
-                          fontSize: 25.0,
+                          fontSize: 32.0,
                           fontWeight: FontWeight.w700,
                           fontFamily: "OpenSans",
                         ),
@@ -82,7 +86,7 @@ class _SignInScreenState extends State<SignInScreen> {
               ),
               SizedBox(height: 40.0,),
               Container(
-                height: MediaQuery.of(context).size.height - 185.0,
+                height: MediaQuery.of(context).size.height - 195.0,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(topLeft: Radius.circular(75.0)),
@@ -122,9 +126,9 @@ class _SignInScreenState extends State<SignInScreen> {
                                       context: context);
                                 },
                                 splashColor: Colors.black12,
-                                borderColor: Color.fromRGBO(212, 20, 15, 1.0),
+                                borderColor: Color(0xFF21BFBD),
                                 borderWidth: 0,
-                                color: Color.fromRGBO(212, 20, 15, 1.0),
+                                color: Color(0xFF21BFBD),
                               ),
                             ),
                           ],

@@ -29,13 +29,21 @@ class _ReminderState extends State<Reminder> {
     super.initState();
     notificationFuture = _notificationPlugin.getScheduledNotifications();
   }
-
-  final reminderName = TextEditingController();
+  int id= 0;
+  //final reminderName = TextEditingController();
   @override
   Widget build(BuildContext context){
-    return Center(
+    return Scaffold(
+      body: Container(
+        padding: EdgeInsets.only(top: 40.0),
         child: Column(
           children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[IconButton(
+                onPressed: () {Navigator.of(context).pop();},
+                icon: Icon(Icons.arrow_back),
+              ),],),
             FutureBuilder<List<PendingNotificationRequest>>(
               future: notificationFuture,
               initialData: [],
@@ -55,15 +63,17 @@ class _ReminderState extends State<Reminder> {
                 );
               },
             ),
-          FloatingActionButton(
+          SizedBox(width: 300.0,
+          child: RaisedButton(
+            child: Text('Add Reminder'),
+            color: Color(0xFF21BFBD),
             onPressed: navigateToNotificationCreation,
-                        
-                      ),
-                      ],
-                    ),
-                  );
-              }
-          List<NotificationData> _notifications = List();
+             )
+          ),
+        ],),
+      ),);
+  }
+          //List<NotificationData> _notifications = List();
           Future<void> dismissNotification(int id) async {
             await _notificationPlugin.cancelNotifications(id);
             refreshNotification();
@@ -80,21 +90,23 @@ class _ReminderState extends State<Reminder> {
                 builder: (context) => CreateNotificationPage(),
               ),
             );
+            
             if (notificationData != null) {
               final notificationList = await _notificationPlugin.getScheduledNotifications();
-              int id =0;
-              for(var i =0; i < 100; i++){
-                bool exists = _notificationPlugin.checkifIdExists(_notifications, i);
+              //int id =0;
+              /*for(var i =0; i < 100; i++){
+                bool exists = _notificationPlugin.checkifIdExists(notificationList, i);
                 if(!exists){
                   id = i;
                 }
-              }
+              }*/
               await _notificationPlugin.showDailyAtTime(
                 notificationData.time, 
                 id, 
                 notificationData.title, 
                 notificationData.description
                 );
+                id++;
                 setState(() {
                   notificationFuture = _notificationPlugin.getScheduledNotifications();
                 });
@@ -113,16 +125,15 @@ class NotificationTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
     return Card(
-      child: ListTile(
-        title: Text(notification.title),
-        subtitle: Text(notification.body),
-        trailing: IconButton(
-          onPressed: () => deleteNotification(notification.id),
-          icon: Icon(Icons.delete),
-        )
-      ),
+        child: ListTile(
+          title: Text(notification.title),
+          subtitle: Text(notification.body),
+          trailing: IconButton(
+            onPressed: () => deleteNotification(notification.id),
+            icon: Icon(Icons.delete),
+          )
+        ),
     );
   }
 }

@@ -54,7 +54,7 @@ class _MainScreenState extends State<MainScreen> {
         leading: new IconButton(
             icon: new Icon(Icons.menu),
             onPressed: () => _scaffoldKey.currentState.openDrawer()),
-        title: Text("Home"),
+        title: Text("MedApp"),
         centerTitle: true,
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -100,28 +100,37 @@ class _MainScreenState extends State<MainScreen> {
                   style: new TextStyle(),
                 )),
             ListTile(
-              title: Text('Create Notification'),
-              onTap: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) =>CreateNotificationPage()),
-                  );
+              title: Row(
+                children: <Widget>[
+                  Icon(Icons.notifications),
+                  SizedBox(width:20.0),
+                  Text('Measurement Reminder'),]),
+              onTap: (){Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => Reminder(),
+                ),
+                );
+                _scaffoldKey.currentState.openEndDrawer();
+              },),
+            /*ListTile(
+              title: Row(
+                children: <Widget>[
+                  Icon(Icons.notifications),
+                  Text('Create Notification'),]),
+              onTap: (){Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => CreateNotificationPage(),
+                ),
+              );
                 _scaffoldKey.currentState.openEndDrawer();
               },
-            ),
-
-               ListTile(
-              title: Text('Measurement Reminder'),
-              onTap: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) =>Reminder()),
-                  );
-                _scaffoldKey.currentState.openEndDrawer();
-              },
-            ),
+            ),*/
             ListTile(
-              title: Text('Log Out'),
+              title: Row(
+                children: <Widget>[
+                  Icon(Icons.lock),
+                  SizedBox(width:20.0),
+                  Text('Log Out'),]),
               onTap: () {
                 _logOut();
                 _scaffoldKey.currentState.openEndDrawer();

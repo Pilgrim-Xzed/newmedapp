@@ -32,6 +32,7 @@ class _AddMedState extends State<AddMed> {
   bool _monval = false;
   final db = Firestore.instance;
   final notifications = FlutterLocalNotificationsPlugin();
+  final _formKey = GlobalKey<FormState>();
 
   @override
   void initState() {
@@ -296,24 +297,26 @@ Future onSelectNotification(String payload) async => await Navigator.push(contex
     }
   }
 
-  final medName = TextEditingController();
-  final dosageName = TextEditingController();
+  final _medName = TextEditingController();
+  final _dosageName = TextEditingController();
 var _dateTime;
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: new AppBar(
         
-        leading: new IconButton(
+        /*leading: new IconButton(
             icon: new Icon(Icons.close),
             onPressed: () {
               showAlertDialog();
-            }),
+            }),*/
         title: new Text('Add Medication'),
         backgroundColor: Color(0xFF21BFBD),
       ),
       body: SingleChildScrollView(
-        child: new Container(
+        child: Form(
+          key: _formKey,
+          child: Container(
           decoration: BoxDecoration(color: Color(0xffcccccc)),
           padding: EdgeInsets.all(20.0),
           child: new Column(
@@ -327,8 +330,13 @@ var _dateTime;
                         fontSize: 20.0,
                       ),
                     ),
-                    new TextField(
-                      controller: medName,
+                    new TextFormField(
+                      controller: _medName,
+                      validator: (value) {
+                        if (value.isEmpty) {
+                          return 'Please enter some text';
+                        }
+                      },
                       decoration: InputDecoration(
                         filled: true,
                         hintText: 'Add medication/ treatment',
@@ -354,8 +362,13 @@ var _dateTime;
                         ),
                       ),
                     ),
-                    new TextField(
-                      controller:dosageName ,
+                    new TextFormField(
+                      controller:_dosageName ,
+                      validator: (value) {
+                      if (value.isEmpty) {
+                        return 'Please enter some text';
+                      }
+                    },
                       decoration: InputDecoration(
                         filled: true,
                         hintText: 'Dosage',
@@ -398,7 +411,7 @@ var _dateTime;
     ),
     highlightedTextStyle: TextStyle(
       fontSize: 24,
-      color: Colors.yellow
+      color: Colors.blueAccent,
     ),
     spacing: 50,
     itemHeight: 80,
@@ -466,13 +479,13 @@ var _dateTime;
                         fontSize: 15.0,
                       ),
                     ),
-                    onPressed: ()=>null
+                    onPressed: (){Navigator.of(context).pop();}
                   ),
                   SizedBox(
                     width: 10.0,
                   ),
                   RaisedButton(
-                    color: Color(0xffba6b6c),
+                    color: Colors.white,
                     child: new Text(
                       'Done',
                       style: TextStyle(
@@ -480,25 +493,27 @@ var _dateTime;
                       ),
                     ),
                     onPressed: () async {
-                      var data = {
-                        "name": medName.text,
-                        "dosage": dosageName.text,
-                        "time": _dateTime,
-                        "interval":dropdownvalue,
-                        "infoid":widget.firebaseUser.uid
-                        
-                      };
-                      await db.collection('info').add(data).then((onValue)=>{
-                         showOngoingNotification(notifications,title:medName.text,body:dosageName.text,time:time),
-                      });
-                      Navigator.of(context).pop();
-                    },
-                  ),
+                      if (_formKey.currentState.validate()){      
+                        var data = {
+                          "name": _medName.text,
+                          "dosage": _dosageName.text,
+                          "time": _dateTime,
+                          "interval":dropdownvalue,
+                          "infoid":widget.firebaseUser.uid
+                          
+                        };
+                        await db.collection('info').add(data).then((onValue)=>{
+                          showOngoingNotification(notifications,title:_medName.text,body:_dosageName.text,time:time),
+                        });
+                        Navigator.of(context).pop();
+                    }},//asynclose
+                  ),//where raisedbutton ended
                 ],
               ),
             ],
           ),
         ),
+      ),
       ),
       resizeToAvoidBottomInset: false,
     );

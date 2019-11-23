@@ -10,7 +10,7 @@ class WalkthroughScreen extends StatefulWidget {
   final List<Walkthrough> pages = [
   Walkthrough(
       icon: FontAwesomeIcons.fileMedical,
-      title: "Your newapps",
+      title: "Welcome to MedApp",
       description:"Take actions into your own hands by taking control of your meds.Follow your regimen with this easy steps only one click away",
     ),
 
@@ -90,7 +90,7 @@ class _WalkthroughScreenState extends State<WalkthroughScreen> {
                   style: TextStyle(
                     color: Colors.white,
                     decoration: TextDecoration.none,
-                    fontSize: 15.0,
+                    fontSize: 18.0,
                     fontWeight: FontWeight.w300,
                     fontFamily: "OpenSans",
                   ),
