@@ -77,7 +77,9 @@ Future onSelectNotification(String payload) async => await Navigator.push(contex
     "Tue",
     "Wed",
     "Thurs",
-    "Fri"
+    "Fri",
+    "Sat",
+    "Sun"
   ];
 
 
