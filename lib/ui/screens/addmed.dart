@@ -114,14 +114,14 @@ _showReportDialog() {
   void showAlertDialog() {
     AlertDialog dialog = new AlertDialog(
       content:
-          new Text('Sweetie, are you sure you want to discard unsaved changes?'),
+          new Text('Are you sure you want to save this information?'),
       //style: new TextStyle(fontSize: 30.0,),
       actions: <Widget>[
         new FlatButton(
           onPressed: () {
-            _dialogResult('quit');
+            _dialogResult('yes');
           },
-          child: new Text("Quit"),
+          child: new Text("Yes"),
         ),
         new FlatButton(
           onPressed: () {
@@ -157,11 +157,11 @@ _showReportDialog() {
 
 
 
-  void onChangedradio(String value) {
+  /*void onChangedradio(String value) {
     setState(() {
       selected = value;
     });
-  }
+  }*/
 
   void setAnswer(String dialogvalue) {
     setState(() {
@@ -187,11 +187,11 @@ var _dateTime;
         title: new Text('Add Medication'),
         backgroundColor: Color(0xFF21BFBD),
       ),
+      backgroundColor: Color(0xffcccccc),
       body: SingleChildScrollView(
         child: Form(
           key: _formKey,
           child: Container(
-          decoration: BoxDecoration(color: Color(0xffcccccc)),
           padding: EdgeInsets.all(20.0),
           child: new Column(
             children: <Widget>[
@@ -208,7 +208,7 @@ var _dateTime;
                       controller: _medName,
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'Please enter some text';
+                          return 'Medication name needs to be entered';
                         }
                       },
                       decoration: InputDecoration(
@@ -240,7 +240,7 @@ var _dateTime;
                       controller:_dosageName ,
                       validator: (value) {
                       if (value.isEmpty) {
-                        return 'Please enter some text';
+                        return 'Dosage value needs to be entered';
                       }
                     },
                       decoration: InputDecoration(
@@ -261,9 +261,9 @@ var _dateTime;
                           },
                           items: <String>[
                             "Once daily",
-                            "Twice daily",
-                            "Three times daily",
-                            "Every 6 hours",
+                            "Twice daily (12 hours)",
+                            "Three times daily (8 hours)",
+                            "Four times daily (6 hours) ",
                             "Every 4 hours",
                             "Every 3 hours",
                             "Every 2 hours",
@@ -299,7 +299,7 @@ var _dateTime;
                   ],
                 ),
               )),
-              Card(
+              /*Card(
                 child: Padding(
                   padding: EdgeInsets.all(10.0),
                   child: Column(
@@ -317,7 +317,7 @@ var _dateTime;
                       new Row(
                         children: <Widget>[
                           new Text(
-                            'Specify:',
+                            'Specify days:',
                             textAlign: TextAlign.left,
                             style: TextStyle(
                               fontSize: 15.0,
@@ -344,7 +344,7 @@ var _dateTime;
                     ],
                   ),
                 ),
-              ),
+              ),*/
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
@@ -381,7 +381,7 @@ var _dateTime;
                           
                         };
                         await db.collection('info').add(data).then((onValue)=>{
-                          showOngoingNotification(notifications,title:_medName.text,body:_dosageName.text,time:time),
+                            showOngoingNotification(notifications,title:_medName.text,body:_dosageName.text,time:time),
                         });
                         Navigator.of(context).pop();
                     }},//asynclose
@@ -395,6 +395,11 @@ var _dateTime;
       ),
       resizeToAvoidBottomInset: false,
     );
+  }
+  void intervalnotification(){
+    if (dropdownvalue == "Once daily"){
+       
+    }
   }
 }
 
@@ -454,4 +459,5 @@ class _MultiSelectChipState extends State<MultiSelectChip> {
     );
   }
 }
+
 

@@ -112,19 +112,20 @@ class _MainScreenState extends State<MainScreen> {
                 );
                 _scaffoldKey.currentState.openEndDrawer();
               },),
-            /*ListTile(
+            ListTile(
               title: Row(
                 children: <Widget>[
-                  Icon(Icons.notifications),
-                  Text('Create Notification'),]),
+                  Icon(FontAwesomeIcons.pencilAlt),
+                  SizedBox(width:20.0),
+                  Text('Add Notes'),]),
               onTap: (){Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => CreateNotificationPage(),
+                  builder: (context) => AddNote(),
                 ),
               );
                 _scaffoldKey.currentState.openEndDrawer();
               },
-            ),*/
+            ),
             ListTile(
               title: Row(
                 children: <Widget>[
@@ -190,13 +191,13 @@ class Medications extends StatelessWidget {
                               style: TextStyle(color: Colors.black))
                         ],
                       ),
-                      Row(
+                      /*Row(
                         children: <Widget>[
                           
                           Text("${document['selectedDays'].toString()}",
                               style: TextStyle(color: Colors.black))
                         ],
-                      ),
+                      ),*/
                         ],
                       ),
                       trailing: IconButton(
@@ -743,7 +744,7 @@ class _MeasurementPageState extends State<MeasurementPage> {
               height: ScreenUtil.getInstance().setHeight(30),
             ),
             Text(
-              "Sys-Low",
+              "Dia-Low",
               style: TextStyle(
                 fontFamily: "Poppins-Medium",
                 fontSize: ScreenUtil.getInstance().setSp(26),
@@ -752,7 +753,7 @@ class _MeasurementPageState extends State<MeasurementPage> {
             TextField(
               controller: sysLow,
               decoration: InputDecoration(
-                  hintText: "Enter Sys-Low",
+                  hintText: "Enter Dia-Low",
                   hintStyle: TextStyle(color: Colors.grey, fontSize: 12.0)),
             ),
             SizedBox(

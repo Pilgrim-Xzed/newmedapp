@@ -122,7 +122,7 @@ class _WalkthroughScreenState extends State<WalkthroughScreen> {
                 padding:
                     const EdgeInsets.only(top: 50.0, right: 15.0, left: 15.0),
                 child: Text(
-                  "Track Your newapps",
+                  "Track Your medication",
                   softWrap: true,
                   textAlign: TextAlign.center,
                   style: TextStyle(

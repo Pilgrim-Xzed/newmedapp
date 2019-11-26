@@ -31,6 +31,7 @@ class _ReminderState extends State<Reminder> {
   }
   int id= 0;
   //final reminderName = TextEditingController();
+  
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -100,12 +101,12 @@ class _ReminderState extends State<Reminder> {
                   id = i;
                 }
               }*/
-              await _notificationPlugin.showDailyAtTime(
+              /*await _notificationPlugin.showDailyAtTime(
                 notificationData.time, 
                 id, 
                 notificationData.title, 
                 notificationData.description
-                );
+                );*/
                 id++;
                 setState(() {
                   notificationFuture = _notificationPlugin.getScheduledNotifications();
